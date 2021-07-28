@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from '../components/Home.jsx';
 import Technologies from '../components/Technologies.jsx';
 import TechnologyById from "../components/TechnologyById.jsx";
+import ResultSearch from '../components/ResultSearch.jsx';
 
 
 const Rutas = () =>{
@@ -13,7 +14,7 @@ const Rutas = () =>{
                 <Route path='/home' component={Home}/>
                 <Route path='/technology/:id' component={TechnologyById}/>
                 <Route path='/technologies' component={Technologies}/>
-            
+                <Route path='/search/:find' component={ResultSearch}/>
 
                 <Route path='/' component={Home}/>
             </Switch>
